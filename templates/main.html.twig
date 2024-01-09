@@ -15,22 +15,32 @@
 <body>
     <nav class="navbar bg-secondary bg-gradient" >
         <div class="container-fluid">
-            <a class = "navbar-brand fw-bold fs-4" href="/uvod">CANGABANG.CZ</a>
+            <a class = " text1 navbar-brand fw-bold fs-4" href="/uvod">CANGABANG.CZ</a>
             <div  class="">
                 <ul class="nav nav-pills">            
                     <li class = "nav-item ms-auto">
-                        <a href = "/1" class = "fw-bold fs-5 ms-auto nav-link text-black">stranka1</a>
+                        <a href = "/1" class = "text1 fw-bold fs-5 ms-auto nav-link text-black">stranka1</a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "/2" class = "fw-bold fs-5 ms-auto nav-link text-black">stranka2</a>
+                        <a href = "/2" class = "text1 fw-bold fs-5 ms-auto nav-link text-black">stranka2</a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "/3" class = "fw-bold fs-5 ms-auto nav-link text-black">stranka3</a>
+                        <a href = "/3" class = "text1 fw-bold fs-5 ms-auto nav-link text-black">stranka3</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <style>
+.text1 {
+    transition: transform 0.3s ease;
+}
+
+.text1:hover {
+    transform: scale(1.1);
+}
+</style>
 
     {% block obsah %}
     <div class = "position-absolute top-50 start-50 translate-middle text-center fs-5">   
