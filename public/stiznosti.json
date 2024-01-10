@@ -1,0 +1,17 @@
+{
+    "template": "stiznosti.html.twig",
+    "stiznosti": {
+        "stiznost0": {
+            "name": "frantisek obeslo",
+            "text": "vadi mi ze se tam netopi"
+        },
+        "stiznost1": {
+            "name": "fesdfe",
+            "text": "sdfes"
+        },
+        "stiznost2": {
+            "name": "fesdf",
+            "text": "esdfes"
+        }
+    }
+}

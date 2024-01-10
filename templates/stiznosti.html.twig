@@ -1,0 +1,45 @@
+{% extends "main.html.twig" %}
+{% block obsah %}
+
+
+
+<div class="container-fluid">
+    <form id="postForm">
+        <div class="row justify-content-center my-4">
+            <div class="col-6">
+                <label class="form-label fw-bold">Vaše jméno</label>
+                <input class="form-control shadow-sm" id="formName" placeholder="Zadejte jméno" required>
+            </div>
+        </div>
+        <div class="row justify-content-center my-4">
+            <div class="col-6">
+                <label class="form-label fw-bold">Váš příspěvek</label>
+                <input class="form-control shadow-sm" id="formText" rows="4" placeholder="Sem napiště stížnost" required></input>
+            </div>
+        </div>
+        <div class="row justify-content-center my-4">
+            <div class="col-6">
+                <button type="submit" id="btnSubmit" class="shadow-sm ">Přidat</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% for stiznost in stiznosti %}
+<div class="container-fluid post">
+    <div class="row justify-content-center">
+        <div class="col-6 fs-7 my-2 fw-bold">
+            {{ stiznost.name }}:
+        </div>
+    </div>
+    <div class="row justify-content-center ">
+        <div class="col-6 fs-6 p-3 border border-secondary shadow-sm bg-secondary bg-gradient rounded-3 text-white">
+            {{ stiznost.text }}
+        </div>
+    </div>
+    
+</div>
+{% endfor %}
+
+<script src ="{{asset('stiznost.js')}}"></script>
+{% endblock %}

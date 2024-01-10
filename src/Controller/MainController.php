@@ -50,6 +50,12 @@ class MainController extends AbstractController
                 $fullPath = null;
             }
         }
+        
+        $jsonFilePath = $this->getParameter('kernel.project_dir') . '/public/stiznosti.json';
+        if ($path === 'stiznosti') {
+            $jsonData = $this->loadJSON($jsonFilePath);
+            return $this->render('stiznosti.html.twig', $jsonData);
+        }
 
         if ($type === 'unknown') {
             throw new NotFoundHttpException("File not found");
@@ -62,7 +68,9 @@ class MainController extends AbstractController
         } else {
             return $this->render($data['template'], $data['vars']);
         }
+        
     }
+    
 
     private function loadFile(string $fullPath, string $type, Request $request): array
     {
