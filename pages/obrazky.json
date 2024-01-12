@@ -1,0 +1,16 @@
+{
+    "template": "obrazky.html.twig",
+    "vars": {
+        "obrazek": [
+            "/svg/kalhoty1.jpg",
+            "/svg/mikina1.jpg",
+            "/svg/mikina2.jpg",
+            "/svg/mikina3.jpg",
+            "/svg/kalhoty2.jpg",
+            "/svg/mikina4.jpg",
+            "/svg/kalhoty3.jpg",
+            "/svg/kalhoty4.jpg"
+        ]
+    }
+    
+}

@@ -1,0 +1,22 @@
+{% extends "main.html.twig" %}
+{% block obsah %}
+
+<style>
+.image {
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+</style>
+
+<div class = "text-center">
+    {% for obr in obrazek %}
+        <img class = "image img-fluid border border-3 border-secondary rounded-3 m-5 shadow-sm" src = "{{ asset(obr) }}" width="350" >
+    {% endfor %}
+</div>
+
+
+  
+{% endblock %}

@@ -1,0 +1,17 @@
+{
+    "template": "tabulka.html.twig",
+    "vars":{
+        "veci": [
+            {"nazev": "Mikina - Ramen Noodle Soup Beef Flavor", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "399,-", "skladem": "652x"},
+            {"nazev": "Mikina na zip - Ramen Noodle Soup Beef Flavor", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "349,-", "skladem": "452x"},
+            {"nazev": "Mikina - Ramen Noodle Soup Chicken Flavor", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "399,-", "skladem": "689x"},
+            {"nazev": "Mikina - Takis Fuego", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "399,-", "skladem": "698x"},
+            {"nazev": "Kalhoty - Ramen Noodle Soup Beef Flavor", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "299,-", "skladem": "120x"},
+            {"nazev": "Kalhoty - Ramen Noodle Soup Beef Flavor v.2", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "299,-", "skladem": "500x"},
+            {"nazev": "Kalhoty - Happy", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "299,-", "skladem": "328x"},
+            {"nazev": "Kalhoty - Burger", "velikost": "XS, S, M, L, XL, 2XL, 3XL", "cena": "299,-", "skladem": "444x"}
+        ]
+    }
+    
+    
+}

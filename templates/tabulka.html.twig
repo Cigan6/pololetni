@@ -1,0 +1,24 @@
+{% extends "main.html.twig" %}
+{% block obsah %}
+
+
+<table class = "table table-dark shadow-sm mt-5">
+  <tr>
+    <th>Produkt</th>
+    <th>Velikosti</th>
+    <th>Cena</th>
+    <th>Skladem</th>
+    
+  </tr>
+  {% for vec in veci %}
+  <tr>
+    <td>{{ vec.nazev }}</td>
+    <td>{{ vec.velikost }}</td>
+    <td>{{ vec.cena }}</td>
+    <td>{{ vec.skladem }}</td>
+  </tr>
+  {% endfor %}
+  
+</table>
+
+{% endblock %}

@@ -12,7 +12,17 @@
   crossorigin="anonymous"></script>
     <style>
     body {
-        background-image: url({{asset("svg/pozadi.jpg")}});
+        background-image: url("/svg/pozadi.jpg");
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+
+    .text1 {
+    transition: transform 0.3s ease;
+    }
+
+    .text1:hover {
+        transform: scale(1.1);
     }
     </style>
 </head>
@@ -23,28 +33,18 @@
             <div  class="">
                 <ul class="nav nav-pills">            
                     <li class = "nav-item ms-auto">
-                        <a href = "/1" class = "text1 fw-bold fs-5 ms-4 nav-link bg-dark bg-gradient text-white">Obrázky produktů</a>
+                        <a href = "/obrazky" class = "text1 fw-bold fs-5 ms-4 nav-link bg-dark bg-gradient text-white">Obrázky produktů</a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "/2" class = "text1 fw-bold fs-5 ms-4 nav-link bg-dark bg-gradient text-white">seznam produktů</a>
+                        <a href = "/tabulka" class = "text1 fw-bold fs-5 ms-4 nav-link bg-dark bg-gradient text-white">Seznam produktů</a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "/stiznosti" class = "text1 fw-bold fs-5 ms-4 nav-link bg-dark bg-gradient text-white">napsat stížnost</a>
+                        <a href = "/stiznosti" class = "text1 fw-bold fs-5 ms-4 nav-link bg-dark bg-gradient text-white">Napsat stížnost</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <style>
-.text1 {
-    transition: transform 0.3s ease;
-}
-
-.text1:hover {
-    transform: scale(1.1);
-}
-</style>
 
     {% block obsah %}
     <div class = "position-absolute top-50 start-50 translate-middle text-center fs-5">   
